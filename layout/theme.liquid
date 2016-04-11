@@ -81,24 +81,16 @@
           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
         </nav>
       </div>
       <span class="android-mobile-title mdl-layout-title">
         <img class="android-logo-image" src="images/android-logo.png">
       </span>
       <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-        <i class="material-icons">more_vert</i>
+        <a href="/cart" class="site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+          <i class="material-icons">shopping_cart</i>
+        </a>
       </button>
-      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-        <li class="mdl-menu__item">5.0 Lollipop</li>
-        <li class="mdl-menu__item">4.4 KitKat</li>
-        <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-        <li class="mdl-menu__item">Android History</li>
-      </ul>
     </div>
   </div>
 
@@ -110,26 +102,12 @@
       <a class="mdl-navigation__link" href="">Phones</a>
       <a class="mdl-navigation__link" href="">Tablets</a>
       <a class="mdl-navigation__link" href="">Wear</a>
-      <a class="mdl-navigation__link" href="">TV</a>
-      <a class="mdl-navigation__link" href="">Auto</a>
-      <a class="mdl-navigation__link" href="">One</a>
-      <a class="mdl-navigation__link" href="">Play</a>
       <div class="android-drawer-separator"></div>
       <span class="mdl-navigation__link" href="">Versions</span>
       <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
       <a class="mdl-navigation__link" href="">KitKat 4.4</a>
       <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
       <a class="mdl-navigation__link" href="">Android history</a>
-      <div class="android-drawer-separator"></div>
-      <span class="mdl-navigation__link" href="">Resources</span>
-      <a class="mdl-navigation__link" href="">Official blog</a>
-      <a class="mdl-navigation__link" href="">Android on Google+</a>
-      <a class="mdl-navigation__link" href="">Android on Twitter</a>
-      <div class="android-drawer-separator"></div>
-      <span class="mdl-navigation__link" href="">For developers</span>
-      <a class="mdl-navigation__link" href="">App developer resources</a>
-      <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-      <a class="mdl-navigation__link" href="">Android SDK</a>
     </nav>
   </div>
 
@@ -263,7 +241,7 @@
               </div>
             {% endif %}
           </div>
-          <div class="cart-card-fixed grid__item large--one-half large--text-right medium-down--hide">
+<!--           <div class="cart-card-fixed grid__item large--one-half large--text-right medium-down--hide">
           <div class="cart-card">
             {% comment %}
               Show number of items in the cart and total cost in the /cart link
@@ -305,7 +283,7 @@
               </div>
             {% endif %}
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
