@@ -60,64 +60,82 @@
 {% endcomment %}
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-    <div class="mdl-layout__header-row">
-      <span class="android-title mdl-layout-title">
-        <img class="android-logo-image" src="images/android-logo.png">
-      </span>
-      <!-- Add spacer, to align navigation to the right in desktop -->
-      <div class="android-header-spacer mdl-layout-spacer"></div>
-      <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" id="search-field">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <span class="android-title mdl-layout-title">
+          <img class="android-logo-image" src="images/android-logo.png">
+        </span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+        <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search-field">
+          </div>
         </div>
-      </div>
-      <!-- Navigation -->
-      <div class="android-navigation-container">
-        <nav class="android-navigation mdl-navigation">
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-        </nav>
-      </div>
-      <span class="android-mobile-title mdl-layout-title">
-        <img class="android-logo-image" src="images/android-logo.png">
-      </span>
-      <a href="/cart" class="android-cart-button site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
-        <div class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
-          <i class="material-icons" aria-hidden="true">shopping_cart</i>
+        <!-- Navigation -->
+        <div class="android-navigation-container">
+          <nav class="android-navigation mdl-navigation">
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
+          </nav>
         </div>
-      </a>
+        <span class="android-mobile-title mdl-layout-title">
+          <img class="android-logo-image" src="images/android-logo.png">
+        </span>
+        <button id="cart">
+          <div class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+            <i class="material-icons" aria-hidden="true" data-badge="5">shopping_cart</i>
+          </div>
+        </button>
+      </div>
     </div>
+
+    <div class="android-drawer mdl-layout__drawer">
+      <span class="mdl-layout-title">
+        <img class="android-logo-image" src="images/android-logo-white.png">
+      </span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Phones</a>
+        <a class="mdl-navigation__link" href="">Tablets</a>
+        <a class="mdl-navigation__link" href="">Wear</a>
+        <div class="android-drawer-separator"></div>
+        <span class="mdl-navigation__link" href="">Versions</span>
+        <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+        <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+        <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+        <a class="mdl-navigation__link" href="">Android history</a>
+      </nav>
+    </div>
+    <div class="mdl-layout__drawer-right">
+      <span class="mdl-layout-title">Notifications</span>
+    </div>
+
+
+    <main class="mdl-layout__content">
+
+    </main>
+
+    
+    <div class="mdl-layout__obfuscator-right"></div>
   </div>
 
-  <div class="android-drawer mdl-layout__drawer">
-    <span class="mdl-layout-title">
-      <img class="android-logo-image" src="images/android-logo-white.png">
-    </span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Phones</a>
-      <a class="mdl-navigation__link" href="">Tablets</a>
-      <a class="mdl-navigation__link" href="">Wear</a>
-      <div class="android-drawer-separator"></div>
-      <span class="mdl-navigation__link" href="">Versions</span>
-      <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-      <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-      <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-      <a class="mdl-navigation__link" href="">Android history</a>
-    </nav>
+  <div id="CartDrawer" class="drawer drawer--right">
+    <div class="drawer__header">
+      <div class="drawer__title h3">{{ 'cart.general.title' | t }}</div>
+      <div class="drawer__close js-drawer-close">
+        <button type="button" class="icon-fallback-text">
+          <span class="icon icon-x" aria-hidden="true"></span>
+          <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
+        </button>
+      </div>
+    </div>
+    <div id="CartContainer"></div>
   </div>
-
-
-
-  <div class="android-content mdl-layout__content">
-
-  </div>
-</div>
 
   <div id="NavDrawer" class="drawer drawer--left">
     <div class="drawer__header">
@@ -202,18 +220,7 @@
     </ul>
     <!-- //mobile-nav -->
   </div>
-  <div id="CartDrawer" class="drawer drawer--right">
-    <div class="drawer__header">
-      <div class="drawer__title h3">{{ 'cart.general.title' | t }}</div>
-      <div class="drawer__close js-drawer-close">
-        <button type="button" class="icon-fallback-text">
-          <span class="icon icon-x" aria-hidden="true"></span>
-          <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
-        </button>
-      </div>
-    </div>
-    <div id="CartContainer"></div>
-  </div>
+
   <div id="PageContainer" class="">
     <header class="site-header" role="banner">
       <div class="wrapper">
