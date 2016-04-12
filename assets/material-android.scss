@@ -75,7 +75,7 @@ a img{
 }
 
   .android-header .material-icons {
-    color: $colorIcons !important;
+    color: $colorIcons + !important;
   }
 
   .android-header .mdl-layout__drawer-button {
