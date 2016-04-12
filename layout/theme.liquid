@@ -74,14 +74,14 @@
           <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
             <i class="material-icons">search</i>
           </label>
-          {% include 'search-bar' %}
+          <li class="mobile-nav__item mobile-nav__search">
+            {% include 'search-bar' %}
+          </li>
         </div>
         <!-- Navigation -->
         <div class="android-navigation-container">
           <nav class="android-navigation mdl-navigation">
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
           </nav>
         </div>
         <span class="android-mobile-title mdl-layout-title">
@@ -101,9 +101,6 @@
       </span>
       <nav class="mdl-navigation">
             <ul class="mobile-nav">
-      <li class="mobile-nav__item mobile-nav__search">
-        {% include 'search-bar' %}
-      </li>
       {% for link in linklists.main-menu.links %}
         {% comment %}
           Create a dropdown menu by naming a linklist the same as a link in the parent nav
