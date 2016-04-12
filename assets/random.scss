@@ -1,4 +1,17 @@
 .mdl-badge[data-badge]:after {
-    width: 16px !important;
-    height: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#cart button {
+  margin-left: 10px;
+}
+
+.mdl-textfield {
+  padding: 27px 0;
+}
+
+.mdl-button--iocan {
+  height: 50px;
+  width: 50px;
 }
