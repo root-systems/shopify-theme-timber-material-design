@@ -25,4 +25,8 @@
 .timber-search {
   order: 2;
   max-width: 300px;
+
+  input {
+    width: 80%;
+  }
 }
