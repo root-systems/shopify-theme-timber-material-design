@@ -1,7 +1,16 @@
 .navbar-logo {
   position: relative;
+  height: 100%;
   left: calc(50% - 70px);
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.android-title {
+  height: 100%
+}
+
+.navbar-logo img {
+  height: 100%;
 }
 
 .mdl-badge[data-badge]:after {
