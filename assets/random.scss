@@ -13,6 +13,10 @@
   height: 100%;
 }
 
+.mdl-layout__drawer {
+  border-right: none; 
+}
+
 .android-drawer .mdl-layout-title {
   background-color: #c1051b;
 }
