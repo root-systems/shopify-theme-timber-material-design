@@ -17,12 +17,10 @@
 <form action="/search" method="get" class="input-group search-bar" role="search">
   {% comment %}<input type="hidden" name="type" value="product">{% endcomment %}
   <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
-  <span class="input-group-btn">
-    <button type="submit" class="btn icon-fallback-text">
-      <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+    <button type="submit" class="icon-fallback-text">
+      <label class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">search</i>
       </label>
       <span class="fallback-text">{{ 'general.search.submit' | t }}</span>
     </button>
-  </span>
 </form>
