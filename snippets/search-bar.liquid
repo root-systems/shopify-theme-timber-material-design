@@ -19,7 +19,9 @@
   <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
   <span class="input-group-btn">
     <button type="submit" class="btn icon-fallback-text">
-      <span class="icon icon-search" aria-hidden="true"></span>
+      <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+            <i class="material-icons">search</i>
+      </label>
       <span class="fallback-text">{{ 'general.search.submit' | t }}</span>
     </button>
   </span>
