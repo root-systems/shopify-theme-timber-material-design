@@ -132,14 +132,14 @@
             <ul class="mobile-nav__sublist">
               {% for childlink in linklists[child_list_handle].links %}
                 <li class="mobile-nav__item {% if childlink.active %} mobile-nav__item--active{% endif %}">
-                  <a href="{{ childlink.url }}" class="mobile-nav__link">{{ childlink.title | escape }}</a>
+                  <a href="{{ childlink.url }}" class="mdl-navigation__link">{{ childlink.title | escape }}</a>
                 </li>
               {% endfor %}
             </ul>
           </li>
         {% else %}
           <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}">
-            <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mdl-navigation__link">{{ link.title }}</a>
           </li>
         {% endif %}
       {% endfor %}
@@ -174,8 +174,6 @@
     </ul>
 
         <div class="android-drawer-separator"></div>
-        <span class="mdl-navigation__link" href="">Versions</span>
-        <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
 
       </nav>
     </div>
