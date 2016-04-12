@@ -80,7 +80,9 @@
         <!-- Navigation -->
         <div class="android-navigation-container">
           <nav class="android-navigation mdl-navigation">
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Easter</a>
+            {% for link in linklists.promo-menu.links %}
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
           </nav>
         </div>
         <button id="cart" class="android-cart-button">
