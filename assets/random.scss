@@ -1,3 +1,10 @@
+.navbar-logo {
+  position: absolute;
+  left: calc(50% - 70px);
+  top: 12px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mdl-badge[data-badge]:after {
   width: 16px !important;
   height: 16px !important;
