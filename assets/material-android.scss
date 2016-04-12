@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+$colorIcons: #fff;
+
 body {
   margin: 0;
 }
@@ -73,7 +75,7 @@ a img{
 }
 
   .android-header .material-icons {
-    color: #767777 !important;
+    color: $colorIcons !important;
   }
 
   .android-header .mdl-layout__drawer-button {
