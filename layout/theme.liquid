@@ -102,72 +102,7 @@
         <img class="android-logo-image" src="images/android-logo-white.png">
       </span>
       <nav class="mdl-navigation">
-      {% comment %}
-        If customer accounts are enabled, provide login and create account links
-      {% endcomment %}
-      {% if shop.customer_accounts_enabled %}
-        {% if customer %}
-          <li class="mobile-nav__item">
-            {% if customer.first_name != blank %}
-              {% capture first_name %}<a href="/account">{{ customer.first_name }}</a>{% endcapture %}
-              {{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }}
-            {% else %}
-              <a href="/account">{{ 'layout.customer.account' | t }}</a>
-            {% endif %}
-          </li>
-          <li class="mobile-nav__item">
-            {{ 'layout.customer.log_out' | t | customer_logout_link }}
-          </li>
-        {% else %}
-          <li class="mobile-nav__item">
-            {{ 'layout.customer.log_in' | t | customer_login_link }}
-          </li>
-          {% if shop.customer_accounts_optional %}
-          <li class="mobile-nav__item">
-            {{ 'layout.customer.create_account' | t | customer_register_link }}
-          </li>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-
-
-        <a class="mdl-navigation__link" href="">Phones</a>
-        <a class="mdl-navigation__link" href="">Tablets</a>
-        <a class="mdl-navigation__link" href="">Wear</a>
-        <div class="android-drawer-separator"></div>
-        <span class="mdl-navigation__link" href="">Versions</span>
-        <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-        <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-        <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-        <a class="mdl-navigation__link" href="">Android history</a>
-      </nav>
-    </div>
-    <div class="mdl-layout__drawer-right">
-      <span class="mdl-layout-title">{{ 'cart.general.title' | t }}</span>
-      <div id="CartContainer"></div>
-    </div>
-
-
-    <main class="mdl-layout__content">
-
-    </main>
-
-
-    <div class="mdl-layout__obfuscator-right"></div>
-  </div>
-
-  <div id="NavDrawer" class="drawer drawer--left">
-    <div class="drawer__header">
-      <div class="drawer__title h3">{{ 'layout.drawers.browse' | t }}</div>
-      <div class="drawer__close js-drawer-close">
-        <button type="button" class="icon-fallback-text">
-          <span class="icon icon-x" aria-hidden="true"></span>
-          <span class="fallback-text">{{ 'layout.drawers.close_menu' | t }}</span>
-        </button>
-      </div>
-    </div>
-    <!-- begin mobile-nav -->
-    <ul class="mobile-nav">
+            <ul class="mobile-nav">
       <li class="mobile-nav__item mobile-nav__search">
         {% include 'search-bar' %}
       </li>
@@ -208,7 +143,68 @@
           </li>
         {% endif %}
       {% endfor %}
+    
+      {% comment %}
+        If customer accounts are enabled, provide login and create account links
+      {% endcomment %}
+      {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+          <li class="mobile-nav__item">
+            {% if customer.first_name != blank %}
+              {% capture first_name %}<a href="/account">{{ customer.first_name }}</a>{% endcapture %}
+              {{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }}
+            {% else %}
+              <a href="/account">{{ 'layout.customer.account' | t }}</a>
+            {% endif %}
+          </li>
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.log_out' | t | customer_logout_link }}
+          </li>
+        {% else %}
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.log_in' | t | customer_login_link }}
+          </li>
+          {% if shop.customer_accounts_optional %}
+          <li class="mobile-nav__item">
+            {{ 'layout.customer.create_account' | t | customer_register_link }}
+          </li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
     </ul>
+
+        <div class="android-drawer-separator"></div>
+        <span class="mdl-navigation__link" href="">Versions</span>
+        <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+
+      </nav>
+    </div>
+    <div class="mdl-layout__drawer-right">
+      <span class="mdl-layout-title">{{ 'cart.general.title' | t }}</span>
+      <div id="CartContainer"></div>
+    </div>
+
+
+    <main class="mdl-layout__content">
+
+    </main>
+
+
+    <div class="mdl-layout__obfuscator-right"></div>
+  </div>
+
+  <div id="NavDrawer" class="drawer drawer--left">
+    <div class="drawer__header">
+      <div class="drawer__title h3">{{ 'layout.drawers.browse' | t }}</div>
+      <div class="drawer__close js-drawer-close">
+        <button type="button" class="icon-fallback-text">
+          <span class="icon icon-x" aria-hidden="true"></span>
+          <span class="fallback-text">{{ 'layout.drawers.close_menu' | t }}</span>
+        </button>
+      </div>
+    </div>
+    <!-- begin mobile-nav -->
+
     <!-- //mobile-nav -->
   </div>
 
