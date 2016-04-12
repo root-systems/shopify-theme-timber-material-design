@@ -16,4 +16,4 @@ $(function() {
       $('.mdl-layout__drawer-right').addClass('active'); 
    }
   });
-}
+})
