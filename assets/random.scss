@@ -7,11 +7,17 @@
   padding: 27px 0;
 }
 
-.mdl-button--icon {
-  height: 50px;
-  width: 50px;
+.mdl-textfield__input {
+  border: 1px solid rgba(255, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 .mdl-textfield__expandable-holder {
   margin-left: 50px;
+}
+
+.mdl-button--icon {
+  height: 50px;
+  width: 50px;
 }
