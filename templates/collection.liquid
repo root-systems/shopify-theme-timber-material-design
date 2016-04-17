@@ -17,8 +17,8 @@
     Different markup if a collection description exists
   {% endcomment %}
   {% if collection.description != blank %}
-    <header class="collection-header">
-      <h1 class="collection-header__title">{{ collection.title }}</h1>
+    <header class="section-header">
+      <h1 class="section-header__title">{{ collection.title }}</h1>
       <div class="rte rte--header">
         {{ collection.description }}
       </div>
@@ -31,8 +31,8 @@
       </div>
     </div>
   {% else %}
-    <header class="collection-header">
-      <h1 class="collection-header__title">{{ collection.title }}</h1>
+    <header class="section-header">
+      <h1 class="section-header__title">{{ collection.title }}</h1>
         {% include 'collection-sidebar' %}
     </header>
     <hr>
