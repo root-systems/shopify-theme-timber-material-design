@@ -1,9 +1,9 @@
-.collection-nav .section-header__title {
-  text-align: center;
-}
-
 .collection-nav h3 {
   margin-top: 0;
+}
+
+.collection-nav .section-header__title, .description  {
+  text-align: center;
 }
 
 .collection-tags {
@@ -26,8 +26,4 @@
 
 .collection-tags li:last-child {
   border-right: none;
-}
-
-.collection-tags .description {
-  text-align: center;
 }
