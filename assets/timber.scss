@@ -937,10 +937,6 @@ hr {
   margin-bottom: $gutter / 1.5;
 }
 
-.section-header__title {
-  text-align: center;
-}
-
 @include at-query ($min, $large) {
   .section-header {
     display: table;
