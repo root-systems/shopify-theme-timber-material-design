@@ -9,3 +9,7 @@
 .collection-tags {
   text-align: right;
 }
+
+.collection-tags span, ul, li {
+  display: inline-block;
+}
