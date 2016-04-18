@@ -28,13 +28,11 @@
       <a href="{{ product.url | within: collection }}" class="grid__image">
         <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
       </a>
-      <h2 class="mdl-card__title-text">
-        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-      </h2>
     </div>
     <div class="mdl-card__supporting-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Aenan convallis.
+     <h2 class="mdl-card__title-text">
+        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+      </h2>
     </div>
     <div class="mdl-card__actions mdl-card--border">
       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
