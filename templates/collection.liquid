@@ -8,40 +8,28 @@
 
 {% paginate collection.products by 12 %}
 
-  {% include 'breadcrumb' %}
-  {% comment %}
-    Use .grid--rev so that the collection tags appear below the products on mobile
-  {% endcomment %}
-
-  {% comment %}
-    Different markup if a collection description exists
-  {% endcomment %}
-  {% if collection.description != blank %}
-    <header class="section-header">
+<nav>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+      {% include 'breadcrumb' %}
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
       <h1 class="section-header__title">{{ collection.title }}</h1>
-      <div class="rte rte--header">
-        {{ collection.description }}
-      </div>
-        {% include 'collection-sidebar' %}
-    </header>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+      {% include 'collection-sidebar' %}
+    </div>
+  </div>
+    <div class="rte rte--header">
+      {{ collection.description }}
+    </div>
     <hr>
     <div class="section-header">
       <div class="section-header__right">
         {% include 'collection-sorting' %}
       </div>
     </div>
-  {% else %}
-    <header class="section-header">
-      <h1 class="section-header__title">{{ collection.title }}</h1>
-        {% include 'collection-sidebar' %}
-    </header>
-    <hr>
-    <div class="section-header">
-      <div class="section-header__right">
-        {% include 'collection-sorting' %}
-      </div>
-    </div>
-  {% endif %}
+</nav>
 
   <div class="mdl-grid">
     {% comment %}
