@@ -938,7 +938,7 @@ hr {
 }
 
 .section-header__title {
-    text-align: center;
+  text-align: center;
 }
 
 @include at-query ($min, $large) {
