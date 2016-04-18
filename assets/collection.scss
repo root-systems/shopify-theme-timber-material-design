@@ -2,12 +2,11 @@
   margin-top: 0;
 }
 
-.collection-nav .section-header__title  {
+.collection-nav .section-header__title, .description  {
   text-align: center;
 }
 
-.collection-nav .description {
-  text-align: center;
+.collection-nav .description h2 {
   font-family: 'Dancing Script', cursive;
 }
 
