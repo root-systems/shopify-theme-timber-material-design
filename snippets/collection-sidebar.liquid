@@ -14,6 +14,7 @@
   Product tags in the current collection
 {% endcomment %}
 {% if collection.all_tags.size > 0 %}
+<div class="collection-tags">
   <h3>{{ 'collections.sidebar.tags' | t }}</h3>
 
   {% comment %}
@@ -68,4 +69,5 @@
       {% endif %}
     {% endfor %}
   </ul>
+</div>
 {% endif %}
