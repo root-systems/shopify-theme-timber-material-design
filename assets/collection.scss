@@ -13,3 +13,12 @@
 .collection-tags span, ul, li {
   display: inline-block;
 }
+
+.collection-tags li {
+  border-right: solid;
+}
+
+
+.collection-tags li:last-child {
+  border-right: none;
+}
