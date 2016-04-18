@@ -1,3 +1,7 @@
+.mdl-card {
+  width: auto;
+}
+
 .collection-nav h3 {
   margin-top: 0;
 }
@@ -32,6 +36,9 @@
   border-right: none;
 }
 
-.mdl-card {
-  width: auto;
+.collection-card img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
