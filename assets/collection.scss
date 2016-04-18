@@ -36,9 +36,13 @@
   border-right: none;
 }
 
+.collection-card .mdl-card--expand {
+  padding: 0;
+}
+
 .collection-card img {
   display: block;
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
   object-fit: cover;
 }
