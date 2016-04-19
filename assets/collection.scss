@@ -93,6 +93,11 @@
 }
 
 .collection-card:hover .collection-card__text-wrapper {
-  max-height: 26vh;
+  max-height: 30vh;
+  transition: max-height 0.15s ease-in;
+}
+
+.collection-card:focus .collection-card__text-wrapper {
+  max-height: 30vh;
   transition: max-height 0.15s ease-in;
 }
