@@ -28,51 +28,10 @@
       <img src="{{product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
     </div>
     <div class="mdl-card__supporting-text">
-     <h2 class="mdl-card__title-text">
+      <h2 class="mdl-card__title-text">
         <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
       </h2>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      {% comment %}
-        ID addToCartForm is a selector for the ajax cart plugin
-      {% endcomment %}
-      <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-vertical no-margin">
-        <select name="id" id="productSelect" class="product-single__variants max-width quick-order-item">
-          {% for variant in product.variants %}
-            {% if variant.available %}
-
-            {% comment %}
-                Note: if you use option_selection.js, your <select> tag will be overwritten, meaning what you have inside <option> will not reflect what you coded below.
-            {% endcomment %}
-            <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
-
-            {% else %}
-            <option disabled="disabled">
-                {{ variant.title }} - {{ 'products.product.sold_out' | t }}
-            </option>
-            {% endif %}
-          {% endfor %}
-        </select>
-
-        <div class="grid__item large--one-sixth push--medium--one-half medium--one-quarter small--one-half amount">
-          <label for="Quantity" class="quantity-selector visually-hidden">{{ 'products.product.quantity' | t }}</label>
-          <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
-        </div>
-
-        <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-        <span id="ProductPrice" class="h2" itemprop="price">{{ current_variant.price | money }}</span>
-
-        <div class="grid__item large--one-sixth push--medium--one-half medium--one-quarter small--one-half">
-          <button type="submit" name="add" id="AddToCart" class="btn mobile-max-width quick-order-item">
-            <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
-          </button>
-        </div>
-      </form>
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        View Updates
-      </a>
-    </div>
-    <p>
+          <p>
       {% comment %}
         You can show a leading 'from' or 'up to' by checking 'product.price_varies'
         if your variants have different prices.
@@ -101,5 +60,43 @@
         <br><s>{{ product.compare_at_price | money }}</s>
       {% endif %}
     </p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      {% comment %}
+        ID addToCartForm is a selector for the ajax cart plugin
+      {% endcomment %}
+      <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-vertical no-margin">
+        <select name="id" id="productSelect" class="product-single__variants max-width quick-order-item">
+          {% for variant in product.variants %}
+            {% if variant.available %}
+
+            {% comment %}
+                Note: if you use option_selection.js, your <select> tag will be overwritten, meaning what you have inside <option> will not reflect what you coded below.
+            {% endcomment %}
+            <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+
+            {% else %}
+            <option disabled="disabled">
+                {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+            </option>
+            {% endif %}
+          {% endfor %}
+        </select>
+
+        <div class="">
+          <label for="Quantity" class="quantity-selector visually-hidden">{{ 'products.product.quantity' | t }}</label>
+          <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+        </div>
+
+        <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+        <span id="ProductPrice" class="h2" itemprop="price">{{ current_variant.price | money }}</span>
+
+        <div class="">
+          <button type="submit" name="add" id="AddToCart" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
