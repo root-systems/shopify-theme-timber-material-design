@@ -87,12 +87,12 @@
 .collection-card__text-wrapper {
   position: absolute;
   background: white;
-  max-height: 6vh;
+  height: 6vh;
   bottom: 0;
-  transition: max-height 0.5s ease-out;
+  transition: height 0.5s ease-out;
 }
 
 .collection-card__text-wrapper--focus {
-  max-height: auto;
-  transition: max-height 0.5s ease-in;
+  height: auto;
+  transition: height 0.5s ease-in;
 }
