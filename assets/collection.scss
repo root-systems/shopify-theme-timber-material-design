@@ -92,7 +92,7 @@
   transition: height 1s ease-out;
 }
 
-.collection-card__text-wrapper--focus {
+.collection-card:hover .collection-card__text-wrapper {
   height: auto;
   transition: height 1s ease-in;
 }
