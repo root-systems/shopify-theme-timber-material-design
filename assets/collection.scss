@@ -82,12 +82,13 @@
 
 .collection-card .mdl-card__supporting-text {
   width: 100%;
+  padding: 10px;
 }
 
 .collection-card__text-wrapper {
   position: absolute;
   background: white;
-  max-height: 6vh;
+  max-height: 7vh;
   bottom: 0;
   transition: max-height 0.05s ease-out;
 }
