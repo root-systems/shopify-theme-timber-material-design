@@ -200,7 +200,7 @@ var ajaxCart = (function(module, $) {
   };
 
   loadCart = function () {
-    $body.addClass('drawer--is-loading');
+    //$body.addClass('drawer--is-loading');
     ShopifyAPI.getCart(cartUpdateCallback);
   };
 
