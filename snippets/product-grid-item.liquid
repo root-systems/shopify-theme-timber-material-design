@@ -28,13 +28,9 @@
       <img src="{{product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
     </div>
     <div class="mdl-card__supporting-text">
-      <div class="collection-card--grid-half">
-        <h2 class="mdl-card__title-text">
-          <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-        </h2>
-      </div>
-      <div class="collection-card--grid-half">
-        <p>
+      <h2 class="mdl-card__title-text">
+        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>   
+        <span>
         {% comment %}
           You can show a leading 'from' or 'up to' by checking 'product.price_varies'
           if your variants have different prices.
@@ -62,8 +58,8 @@
           <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
           <br><s>{{ product.compare_at_price | money }}</s>
         {% endif %}
-      </p>
-    </div>
+      </span>
+    </h2>
     </div>
     <div class="mdl-card__actions mdl-card--border">
       {% comment %}
