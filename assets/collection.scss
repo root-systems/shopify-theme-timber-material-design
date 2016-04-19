@@ -81,5 +81,11 @@
 
 .collection-card__text-wrapper {
   position: relative;
-  bottom: -50px;
+  height: 6vh;
+}
+
+.collection-card__text-wrapper:hover {
+  position: absolute;
+  bottom: 0;
+  background: white;
 }
