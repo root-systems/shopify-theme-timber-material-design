@@ -7,7 +7,7 @@ for (var i = cards.length - 1; i >= 0; i--) {
 
 function focus()
 {
-  console.log(this.children('.collection-card__text-wrapper'))
+  console.log(this.lastElementChild)
 }
 
 function unfocus()
