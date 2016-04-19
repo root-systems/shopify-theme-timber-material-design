@@ -53,5 +53,10 @@
 
 .collection-card .js-qty, .ajaxcart__qty {
   margin-bottom: 0;
-  max-width: auto;
+  max-width: 100%;
+}
+
+.collection-card select {
+  padding: 10px 10px;
+  margin-bottom: 0;
 }
