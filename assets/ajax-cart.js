@@ -193,6 +193,7 @@ var ajaxCart = (function(module, $) {
       formOverride();
     }
 
+    // Load cart on page load
     loadCart();
 
     // Run this function in case we're using the quantity selector outside of the cart
@@ -200,7 +201,6 @@ var ajaxCart = (function(module, $) {
   };
 
   loadCart = function () {
-    $body.addClass('drawer--is-loading');
     ShopifyAPI.getCart(cartUpdateCallback);
   };
 
