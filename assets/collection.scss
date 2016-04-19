@@ -46,3 +46,8 @@
   min-height: 40vh;
   object-fit: cover;
 }
+
+.collection-card .js-qty, .ajaxcart__qty {
+  margin-bottom: 0;
+  max-width: auto;
+}
