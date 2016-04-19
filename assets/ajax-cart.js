@@ -193,7 +193,7 @@ var ajaxCart = (function(module, $) {
       formOverride();
     }
 
-    ShopifyAPI.getCart(cartUpdateCallback);
+    loadCart();
 
     // Run this function in case we're using the quantity selector outside of the cart
     adjustCart();
