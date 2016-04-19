@@ -92,7 +92,7 @@
   transition: max-height 0.1s ease-out;
 }
 
-.collection-card__text-wrapper--focus {
+.collection-card:hover .collection-card__text-wrapper {
   max-height: 20vh;
   transition: max-height 0.1s ease-in;
 }
