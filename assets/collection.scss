@@ -89,10 +89,10 @@
   background: white;
   max-height: 6vh;
   bottom: 0;
-  transition: max-height 0.1s ease-out;
+  transition: max-height 0.05s ease-out;
 }
 
 .collection-card:hover .collection-card__text-wrapper {
   max-height: 20vh;
-  transition: max-height 0.1s ease-in;
+  transition: max-height 0.15s ease-in;
 }
