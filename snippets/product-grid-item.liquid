@@ -67,7 +67,7 @@
       {% endcomment %}
       <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-vertical no-margin">
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col">
+          <div class="mdl-cell mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
             <select name="id" id="productSelect" class="product-single__variants max-width quick-order-item">
               {% for variant in product.variants %}
                 {% if variant.available %}
@@ -86,7 +86,7 @@
             </select>
           </div>
 
-          <div class="mdl-cell mdl-cell--4-col">
+          <div class="mdl-cell mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
             <label for="Quantity" class="quantity-selector visually-hidden">{{ 'products.product.quantity' | t }}</label>
             <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
           </div>
@@ -94,7 +94,7 @@
           <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
           <span id="ProductPrice" class="h2" itemprop="price">{{ current_variant.price | money }}</span>
 
-          <div class="mdl-cell mdl-cell--4-col">
+          <div class="mdl-cell mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
             <button type="submit" name="add" id="AddToCart" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
