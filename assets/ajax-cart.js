@@ -193,6 +193,8 @@ var ajaxCart = (function(module, $) {
       formOverride();
     }
 
+    loadCart();
+
     // Run this function in case we're using the quantity selector outside of the cart
     adjustCart();
   };
