@@ -239,7 +239,8 @@
         });
       });
 
-      ajaxCart.loadCart();
+      console.log(ajaxCart)
+      ajaxCart.load();
 
       jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
         // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
