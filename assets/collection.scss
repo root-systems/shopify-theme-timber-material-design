@@ -89,10 +89,10 @@
   background: white;
   height: 6vh;
   bottom: 0;
-  transition: height 0.5s ease-out;
+  transition: height 1s ease-out;
 }
 
 .collection-card__text-wrapper--focus {
   height: auto;
-  transition: height 0.5s ease-in;
+  transition: height 1s ease-in;
 }
