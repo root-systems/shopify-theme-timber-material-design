@@ -54,11 +54,16 @@
   border-right: none;
 }
 
+.collection-card {
+  height: 46vh;
+}
+
 .collection-card .mdl-card--expand {
   padding: 0;
 }
 
 .collection-card img {
+  position: absolute;
   display: block;
   width: 100vw;
   min-height: 40vh;
@@ -80,13 +85,12 @@
 }
 
 .collection-card__text-wrapper {
-  position: relative;
+  position: absolute;
+  background: white;
   height: 6vh;
+  bottom: 0;
 }
 
-.collection-card__text-wrapper:hover {
-  position: absolute;
+.collection-card__text-wrapper--focus {
   height: auto;
-  bottom: 0;
-  background: white;
 }
