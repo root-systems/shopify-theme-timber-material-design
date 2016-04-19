@@ -93,4 +93,6 @@
 
 .collection-card__text-wrapper--focus {
   height: auto;
+  -webkit-transition: height 0.5s, -webkit-transform 0.5s;
+  transition: height 0.5s, transform 0.5s;
 }
