@@ -8,18 +8,18 @@
 
 {% paginate collection.products by 12 %}
 
-<nav class="collection-nav">
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
-      {% include 'breadcrumb' %}
+  <nav class="max-wrapper collection-nav">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
+        {% include 'breadcrumb' %}
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet">
+        <h3 class="section-header__title">{{ collection.title }}</h3>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
+        {% include 'collection-sidebar' %}
+      </div>
     </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet">
-      <h3 class="section-header__title">{{ collection.title }}</h3>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
-      {% include 'collection-sidebar' %}
-    </div>
-  </div>
     <div class="rte rte--header description">
       <h2>“{{ collection.description }}”</h2>
     </div>
@@ -32,9 +32,9 @@
       </div>
     </div>
     {% endcomment %}
-</nav>
+  </nav>
 
-  <div class="mdl-grid">
+  <div class="max-wrapper mdl-grid">
     {% comment %}
       Loop through our products in the current collection.
       See the snippet 'product-grid-item' for the layout.
