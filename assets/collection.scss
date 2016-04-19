@@ -78,3 +78,8 @@
 .collection-card .mdl-card__supporting-text {
   width: 100%;
 }
+
+.collection-card__text-wrapper {
+  position: relative;
+  bottom: -50px;
+}
