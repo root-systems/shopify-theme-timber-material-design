@@ -19,9 +19,11 @@ More info on global variables (available on all templates):
       </div>
     {% endfor %}
   </section>
-  <section class="index-page__about-me">
-
+  <section class="pad-eight index-page__about-me">
+    {{ pages.Frontpage.content }}
   </section>
+
+  {% comment %}
 
   <h2>{{ 'homepage.sections.frontpage_title' | t }}</h2>
 
@@ -34,8 +36,6 @@ More info on global variables (available on all templates):
       {% include 'product-grid-item' %}
     {% endfor %}
   </div>
-
-  {% comment %}
 
   <hr>
 
