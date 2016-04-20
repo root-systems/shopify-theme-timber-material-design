@@ -8,6 +8,21 @@ More info on global variables (available on all templates):
 {% endcomment %}
 
 <div class="max-wrapper">
+  <section class="index-page__slider">
+    {% for product in collections.frontpage.products%}
+      <div class="index-page__slider-container">
+        {% for image in product.images %}
+          <div>
+            <img src="{{product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </section>
+  <section class="index-page__about-me">
+
+  </section>
+
   <h2>{{ 'homepage.sections.frontpage_title' | t }}</h2>
 
   {% comment %}
@@ -168,4 +183,12 @@ More info on global variables (available on all templates):
     {% endfor %}
   </div>
   {% endcomment %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.index-page__slider-container').slick({
+        infinite: true,
+        dots: true
+      });
+    });
+  </script>
 </div>
