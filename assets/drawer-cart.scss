@@ -1,9 +1,8 @@
-#CartContainer {
-  padding: 10px;
-}
-
-#CartContainer .mdl-layout-title {
+.mdl-layout__drawer-right .mdl-layout-title {
   padding: 0;
   text-align: center;
 }
 
+#CartContainer {
+  padding: 10px;
+}
