@@ -71,6 +71,10 @@
   height: 100%;
 }
 
+.android-drawer .mobile-nav__item a {
+  padding: 16px 40px !important;
+}
+
 .animating{
     animation: animate 1s cubic-bezier(0,1,1,0);            
 }
