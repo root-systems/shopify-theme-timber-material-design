@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590f48e4-15f4-4f96-8182-dfb3ea10954d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/theme.liquid" afterPath="$PROJECT_DIR$/layout/theme.liquid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.liquid" afterPath="$PROJECT_DIR$/templates/index.liquid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/material-android.scss" afterPath="$PROJECT_DIR$/assets/material-android.scss" />
     </list>
     <list id="762e71a9-fd6d-4e81-9fa4-58166fac31b4" name="update with files for wstorm" comment="webstorm Yay!" />
     <ignored path="ripe-deli-theme.iws" />
@@ -98,8 +98,8 @@
       <file leaf-file-name="theme.liquid" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/layout/theme.liquid">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="38" column="87" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -127,6 +127,7 @@
         <option value="$PROJECT_DIR$/assets/random.scss" />
         <option value="$PROJECT_DIR$/templates/index.liquid" />
         <option value="$PROJECT_DIR$/layout/theme.liquid" />
+        <option value="$PROJECT_DIR$/assets/material-android.scss" />
       </list>
     </option>
   </component>
@@ -318,7 +319,7 @@
       <updated>1461108755437</updated>
       <workItem from="1461108760331" duration="262000" />
       <workItem from="1461120319269" duration="749000" />
-      <workItem from="1461126484606" duration="3511000" />
+      <workItem from="1461126484606" duration="3846000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -352,7 +353,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4522000" />
+    <option name="totallyTimeSpent" value="4857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,10 +585,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/material-android.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/layout/theme.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="330">
+          <caret line="38" column="87" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
           <folding />
         </state>
       </provider>
