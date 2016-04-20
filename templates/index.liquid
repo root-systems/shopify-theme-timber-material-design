@@ -8,7 +8,7 @@ More info on global variables (available on all templates):
 {% endcomment %}
 
 <div class="max-wrapper">
-  <section class="index-page__slider">
+  <section class="index-page__slider" style="visibility: hidden">
     {% for product in collections.frontpage.products%}
       <div class="index-page__slider-container">
         {% for image in product.images %}
