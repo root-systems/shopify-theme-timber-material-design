@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590f48e4-15f4-4f96-8182-dfb3ea10954d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.liquid" afterPath="$PROJECT_DIR$/templates/index.liquid" />
     </list>
     <list id="762e71a9-fd6d-4e81-9fa4-58166fac31b4" name="update with files for wstorm" comment="webstorm Yay!" />
@@ -67,8 +68,8 @@
       <file leaf-file-name="index.liquid" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.liquid">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="285">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -288,7 +289,7 @@
       <updated>1461108755437</updated>
       <workItem from="1461108760331" duration="262000" />
       <workItem from="1461120319269" duration="749000" />
-      <workItem from="1461126484606" duration="5534000" />
+      <workItem from="1461126484606" duration="5802000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -322,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6545000" />
+    <option name="totallyTimeSpent" value="6813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>

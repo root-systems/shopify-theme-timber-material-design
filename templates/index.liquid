@@ -19,6 +19,12 @@ More info on global variables (available on all templates):
       </div>
     {% endfor %}
   </section>
+  <script type="text/javascript">
+    $('.index-page__slider-container').slick({
+      infinite: true,
+      dots: true
+    });
+  </script>
   <section class="index-page__about-me">
 
   </section>
@@ -183,12 +189,4 @@ More info on global variables (available on all templates):
     {% endfor %}
   </div>
   {% endcomment %}
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.index-page__slider-container').slick({
-        infinite: true,
-        dots: true
-      });
-    });
-  </script>
 </div>
