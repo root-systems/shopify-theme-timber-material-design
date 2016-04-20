@@ -13,7 +13,7 @@ More info on global variables (available on all templates):
       <div class="index-page__slider-container">
         {% for image in product.images %}
           <div>
-            <img src="{{product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+            <img src="{{image.src | product_img_url: 'large' }}" alt="{{ image.alt | escape }}">
           </div>
         {% endfor %}
       </div>
