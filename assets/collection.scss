@@ -88,17 +88,17 @@
 .collection-card__text-wrapper {
   position: absolute;
   background: white;
-  max-height: 7vh;
+  max-height: 100px;
   bottom: 0;
   transition: max-height 0.05s ease-out;
 }
 
 .collection-card:hover .collection-card__text-wrapper {
-  max-height: 30vh;
+  max-height: 250px;
   transition: max-height 0.15s ease-in;
 }
 
 .collection-card:focus .collection-card__text-wrapper {
-  max-height: 30vh;
+  max-height: 250px;
   transition: max-height 0.15s ease-in;
 }
