@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="590f48e4-15f4-4f96-8182-dfb3ea10954d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/collection.scss" afterPath="$PROJECT_DIR$/assets/collection.scss" />
-    </list>
+    <list default="true" id="590f48e4-15f4-4f96-8182-dfb3ea10954d" name="Default" comment="" />
     <list id="762e71a9-fd6d-4e81-9fa4-58166fac31b4" name="update with files for wstorm" comment="webstorm Yay!" />
     <ignored path="ripe-deli-theme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,8 +75,8 @@
       <file leaf-file-name="collection.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/collection.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="171">
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -319,7 +316,7 @@
       <workItem from="1461120319269" duration="749000" />
       <workItem from="1461126484606" duration="7090000" />
       <workItem from="1461223001962" duration="233000" />
-      <workItem from="1467061402745" duration="357000" />
+      <workItem from="1467061402745" duration="427000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -353,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8691000" />
+    <option name="totallyTimeSpent" value="8761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/collection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding />
         </state>
       </provider>
