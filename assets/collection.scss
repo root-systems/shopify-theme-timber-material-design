@@ -34,24 +34,23 @@
 
 .collection-tags {
   text-align: right;
-}
-
-.collection-tags .breadcrumb {
-  margin-bottom: 0;
+  span {
+    float: left;
+  }
+  .breadcrumb {
+    margin-bottom: 0;
+  }
+  li {
+    border-right: solid 0.5px;
+    padding-right: 5px;
+  }
+  li:last-child {
+    border-right: none;
+  }
 }
 
 .collection-tags span, ul, li {
   display: inline-block;
-}
-
-.collection-tags li {
-  border-right: solid 0.5px;
-  padding-right: 5px;
-}
-
-
-.collection-tags li:last-child {
-  border-right: none;
 }
 
 .collection-card {
