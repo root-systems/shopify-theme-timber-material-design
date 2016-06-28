@@ -8,8 +8,9 @@
     - http://docs.shopify.com/manual/configuration/store-customization/taking-control-of-collections-listing
 
 {% endcomment %}
-
-{% include 'breadcrumb' %}
+<div class="max-wrapper">
+  {% include 'breadcrumb' %}
+</div>
 
 {% comment %}
   Loop through each collection, except 'frontpage'
@@ -20,7 +21,7 @@
 
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
 
-    <div class="section-header">
+    <div class="max-wrapper section-header">
       <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}"><p class="h1 section-header__left">{{ collection_title }}</p></a>
     </div>
 
