@@ -28,7 +28,7 @@
       {% comment %}
       <img src="{{product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
       {% endcomment %}
-      <div class="card-bg-image" style="background-image: url("{{ product.featured_image.src | img_url: 'large'  }}")"></div>
+      <div class="card-bg-image" style="background-image: url({{ product.featured_image | img_url: 'large'  }})"></div>
     </div>
     <div class="collection-card__text-wrapper">
       <div class="mdl-card__supporting-text">
