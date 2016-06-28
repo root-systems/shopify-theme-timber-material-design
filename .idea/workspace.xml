@@ -78,8 +78,8 @@
       <file leaf-file-name="collection.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/collection.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+            <state relative-caret-position="606">
+              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -319,7 +319,7 @@
       <workItem from="1461120319269" duration="749000" />
       <workItem from="1461126484606" duration="7090000" />
       <workItem from="1461223001962" duration="233000" />
-      <workItem from="1467061402745" duration="1186000" />
+      <workItem from="1467061402745" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -353,7 +353,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9520000" />
+    <option name="totallyTimeSpent" value="10073000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/collection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+        <state relative-caret-position="606">
+          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
           <folding />
         </state>
       </provider>
