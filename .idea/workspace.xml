@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590f48e4-15f4-4f96-8182-dfb3ea10954d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/collection.scss" afterPath="$PROJECT_DIR$/assets/collection.scss" />
     </list>
     <list id="762e71a9-fd6d-4e81-9fa4-58166fac31b4" name="update with files for wstorm" comment="webstorm Yay!" />
@@ -78,8 +77,8 @@
       <file leaf-file-name="collection.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/collection.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+            <state relative-caret-position="561">
+              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -319,7 +318,7 @@
       <workItem from="1461120319269" duration="749000" />
       <workItem from="1461126484606" duration="7090000" />
       <workItem from="1461223001962" duration="233000" />
-      <workItem from="1467061402745" duration="1739000" />
+      <workItem from="1467061402745" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -353,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10073000" />
+    <option name="totallyTimeSpent" value="10199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/collection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+        <state relative-caret-position="561">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
           <folding />
         </state>
       </provider>
