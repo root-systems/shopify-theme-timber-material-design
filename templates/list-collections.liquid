@@ -26,7 +26,7 @@
     </div>
 
     <div class="max-wrapper mdl-grid">
-      {% for product in collection.products limit:5 %}
+      {% for product in collection.products %}
         {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
         {% include 'product-grid-item' %}
       {% endfor %}
