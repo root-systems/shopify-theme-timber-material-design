@@ -100,11 +100,11 @@
       max-width: 40%;
     }
   }
-  :hover .collection-card__text-wrapper {
+  &:hover .collection-card__text-wrapper {
     max-height: 250px;
     transition: max-height 0.15s ease-in;
   }
-  :focus .collection-card__text-wrapper {
+  &:focus .collection-card__text-wrapper {
     max-height: 250px;
     transition: max-height 0.15s ease-in;
   }
