@@ -59,6 +59,12 @@
 
 .search-bar {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar input {
+  border-radius: 3px;
 }
 
 .android-drawer .mdl-layout-title {
