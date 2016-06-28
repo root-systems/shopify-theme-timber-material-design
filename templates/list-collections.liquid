@@ -21,13 +21,10 @@
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
 
     <div class="section-header">
-      <p class="h1 section-header__left">{{ collection_title }}</p>
-      <div class="section-header__right">
-        <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}">More {{ collection_title }} &rsaquo;</a>
-      </div>
+      <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}"><p class="h1 section-header__left">{{ collection_title }}</p></a>
     </div>
 
-    <div class="grid">
+    <div class="max-wrapper mdl-grid">
       {% for product in collection.products limit:5 %}
         {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
         {% include 'product-grid-item' %}
