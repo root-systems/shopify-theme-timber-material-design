@@ -58,13 +58,14 @@
   max-width: 250px;
 }
 
-.timber-search .input-group .input-group-field {
-  width: 65%;
+.timber-search input {
+  width: 80%;
   display: inline-block;
 }
 
 .timber-search  button {
   width: 20%;
+  display: inline-block;
 }
 
 .android-drawer .mdl-layout-title {

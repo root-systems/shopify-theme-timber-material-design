@@ -37,8 +37,8 @@
       <file leaf-file-name="random.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/random.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+            <state relative-caret-position="420">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -318,7 +318,7 @@
       <workItem from="1461120319269" duration="749000" />
       <workItem from="1461126484606" duration="7090000" />
       <workItem from="1461223001962" duration="233000" />
-      <workItem from="1467061402745" duration="2081000" />
+      <workItem from="1467061402745" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="update files to get webstorm up and running">
       <created>1461127562737</created>
@@ -352,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10415000" />
+    <option name="totallyTimeSpent" value="10587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/random.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        <state relative-caret-position="420">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
           <folding />
         </state>
       </provider>
