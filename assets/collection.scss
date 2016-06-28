@@ -57,7 +57,7 @@
 }
 
 .collection-card {
-  height: 300px;
+  height: 350px;
 }
 
 .collection-card .mdl-card--expand {
@@ -67,6 +67,9 @@
 .collection-card img {
   display: block;
   object-fit: cover;
+  position: absolute;
+  top: -60px;
+}
 }
 
 .collection-card .js-qty, .ajaxcart__qty {
