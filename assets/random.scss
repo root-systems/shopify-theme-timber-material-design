@@ -83,6 +83,10 @@
     animation: animate 1s cubic-bezier(0,1,1,0);            
 }
 
+.row {
+  margin: 0 16px;
+}
+
 @keyframes animate{
     from {
        transform: scale(1);

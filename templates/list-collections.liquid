@@ -8,7 +8,7 @@
     - http://docs.shopify.com/manual/configuration/store-customization/taking-control-of-collections-listing
 
 {% endcomment %}
-<div class="max-wrapper">
+<div class="max-wrapper row">
   {% include 'breadcrumb' %}
 </div>
 
@@ -21,7 +21,7 @@
 
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
 
-    <div class="max-wrapper section-header">
+    <div class="max-wrapper row section-header">
       <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}"><p class="h1 section-header__left">{{ collection_title }}</p></a>
     </div>
 
