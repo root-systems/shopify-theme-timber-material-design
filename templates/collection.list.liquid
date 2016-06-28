@@ -17,7 +17,31 @@
 
 {% paginate collection.products by 12 %}
 
-{% include 'breadcrumb' %}
+<nav class="max-wrapper collection-nav">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
+      {% include 'breadcrumb' %}
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet">
+
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet">
+
+    </div>
+  </div>
+  <div class="rte rte--header description">
+
+  </div>
+  {% comment %}
+  comment out the sort bar
+  <hr>
+  <div class="section-header">
+    <div class="section-header__right">
+
+    </div>
+  </div>
+  {% endcomment %}
+</nav>
 
 {% comment %}
   Use .grid--rev so that the collection tags appear below the products on mobile
