@@ -1,0 +1,28 @@
+/*
+  RIPE VARIABLES
+*/
+
+$desktop-content-area-max-width = 1600px;
+
+/*
+  UTILITY CLASSES
+  sets the max width for all items in the main. to be used on each section!
+*/
+
+.max-wrapper {
+  max-width: $desktop-content-area-max-width;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
